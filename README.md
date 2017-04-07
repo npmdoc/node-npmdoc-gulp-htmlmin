@@ -1,11 +1,13 @@
-# api documentation for  [gulp-htmlmin (v3.0.0)](https://github.com/jonschlinkert/gulp-htmlmin#readme)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-htmlmin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-htmlmin)
+# api documentation for  [gulp-htmlmin (v3.0.0)](https://github.com/jonschlinkert/gulp-htmlmin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-htmlmin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-htmlmin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-htmlmin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-htmlmin)
 #### gulp plugin to minify HTML.
 
 [![NPM](https://nodei.co/npm/gulp-htmlmin.png?downloads=true)](https://www.npmjs.com/package/gulp-htmlmin)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp_htmlmin_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-gulp-htmlmin%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
