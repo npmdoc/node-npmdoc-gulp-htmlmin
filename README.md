@@ -1,9 +1,14 @@
-# api documentation for  [gulp-htmlmin (v3.0.0)](https://github.com/jonschlinkert/gulp-htmlmin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-htmlmin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-htmlmin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-htmlmin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-htmlmin)
+# npmdoc-gulp-htmlmin
+
+#### basic api documentation for  [gulp-htmlmin (v3.0.0)](https://github.com/jonschlinkert/gulp-htmlmin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-htmlmin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-htmlmin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-htmlmin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-htmlmin)
+
 #### gulp plugin to minify HTML.
 
-[![NPM](https://nodei.co/npm/gulp-htmlmin.png?downloads=true)](https://www.npmjs.com/package/gulp-htmlmin)
+[![NPM](https://nodei.co/npm/gulp-htmlmin.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-htmlmin)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-gulp-htmlmin%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-htmlmin/build/screenCapture.npmPackageListing.svg)
 
@@ -26,7 +31,6 @@
     "contributors": [
         {
             "name": "Shinnosuke Watanabe",
-            "email": "snnskwtnb@gmail.com",
             "url": "https://github.com/shinnn"
         }
     ],
@@ -70,21 +74,17 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "jonschlinkert",
-            "email": "github@sellside.com"
+            "name": "jonschlinkert"
         },
         {
-            "name": "doowb",
-            "email": "brian.woodward@gmail.com"
+            "name": "doowb"
         },
         {
-            "name": "shinnn",
-            "email": "snnskwtnb@gmail.com"
+            "name": "shinnn"
         }
     ],
     "name": "gulp-htmlmin",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jonschlinkert/gulp-htmlmin.git"
@@ -93,19 +93,10 @@
         "pretest": "eslint --config @shinnn/node-legacy index.js test",
         "test": "_mocha"
     },
-    "version": "3.0.0"
+    "version": "3.0.0",
+    "bin": {}
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-htmlmin](#apidoc.module.gulp-htmlmin)
-
-
-
-# <a name="apidoc.module.gulp-htmlmin"></a>[module gulp-htmlmin](#apidoc.module.gulp-htmlmin)
 
 
 
