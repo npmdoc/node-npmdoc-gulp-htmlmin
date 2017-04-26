@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/jonschlinkert/gulp-htmlmin#readme"
-
-    >gulp-htmlmin (v3.0.0)</a>
+    <a href="https://github.com/jonschlinkert/gulp-htmlmin#readme">gulp-htmlmin (v3.0.0)</a>
 </h1>
 <h4>gulp plugin to minify HTML.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-htmlmin">module gulp-htmlmin</a><ol>
 
@@ -101,7 +94,7 @@
         }, function(err) {
           if (err) {
             options = objectAssign({}, options, {fileName: file.path});
-            done(new gutil.PluginError(&#x27;gulp-htmlmin&#x27;, err, options));
+            done(new gutil.PluginError('gulp-htmlmin', err, options));
             return;
           }
           done(null, result);
@@ -114,7 +107,7 @@
         file.contents.pipe(new BufferStreams(function(none, buf, done) {
           minifyHtml(buf, function(err, contents) {
             if (err) {
-              self.emit(&#x27;error&#x27;, err);
+              self.emit('error', err);
               done(err);
             } else {
               done(null, contents);
@@ -128,7 +121,7 @@
 
       minifyHtml(file.contents, function(err, contents) {
         if (err) {
-          self.emit(&#x27;error&#x27;, err);
+          self.emit('error', err);
         } else {
           file.contents = contents;
           self.push(file);
@@ -150,3 +143,4 @@
     ]
 </div>
 </div>
+</body></html>

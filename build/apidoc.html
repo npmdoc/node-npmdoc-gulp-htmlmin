@@ -61,12 +61,86 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-htmlmin">module gulp-htmlmin</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-htmlmin.gulp-htmlmin">
+            function <span class="apidocSignatureSpan"></span>gulp-htmlmin
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-htmlmin" id="apidoc.module.gulp-htmlmin">module gulp-htmlmin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-htmlmin.gulp-htmlmin" id="apidoc.element.gulp-htmlmin.gulp-htmlmin">
+        function <span class="apidocSignatureSpan"></span>gulp-htmlmin
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function gulpHtmlmin(options) {
+  return new Transform({
+    objectMode: true,
+    transform: function htmlminTransform(file, enc, cb) {
+      if (file.isNull()) {
+        cb(null, file);
+        return;
+      }
+
+      function minifyHtml(buf, done) {
+        var result;
+        tryit(function() {
+          result = new Buffer(htmlmin.minify(String(buf), options));
+        }, function(err) {
+          if (err) {
+            options = objectAssign({}, options, {fileName: file.path});
+            done(new gutil.PluginError(&#x27;gulp-htmlmin&#x27;, err, options));
+            return;
+          }
+          done(null, result);
+        });
+      }
+
+      var self = this;
+
+      if (file.isStream()) {
+        file.contents.pipe(new BufferStreams(function(none, buf, done) {
+          minifyHtml(buf, function(err, contents) {
+            if (err) {
+              self.emit(&#x27;error&#x27;, err);
+              done(err);
+            } else {
+              done(null, contents);
+              self.push(file);
+            }
+            cb();
+          });
+        }));
+        return;
+      }
+
+      minifyHtml(file.contents, function(err, contents) {
+        if (err) {
+          self.emit(&#x27;error&#x27;, err);
+        } else {
+          file.contents = contents;
+          self.push(file);
+        }
+        cb();
+      });
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
